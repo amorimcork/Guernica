@@ -91,12 +91,13 @@ footer {
 @media (max-width: 800px) {
     .overlay-image {
         position: fixed;
-        width: 45%; 
-        margin: 50%;
+        width: 38%; 
+        margin: 41%;
         left: -17%;
 
     }
 }
+
 
 
 
