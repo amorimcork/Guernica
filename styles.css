@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: start;
+    height: 100%
+}
+
+.top-right-image {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    width: 650px; 
+    max-width: 100%; 
+}
+.overlay-image {
+    position: fixed; 
+    top: 50px; 
+    right: 50px; 
+    width: 400px; 
+    z-index: 2000; 
+}
+
+model-viewer {
+    margin-left: 670px; 
+    height: 100%;
+    flex-grow: 1;
+    background-color: #fff; 
+}
+
+footer {
+    width: 100%; 
+    padding: 10px 0; 
+    background-color: transparent; 
+    color: grey; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    font-size: 10px; 
+    line-height: 15px;
+    z-index: 1000; 
+}
+
+
+@media (max-width: 1440px) {
+    .top-right-image {
+        width: 45%; 
+    }
+    model-viewer {
+        margin-left: 50%; 
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .top-right-image {
+        position: static;
+        width: 55%; 
+        margin: 40px auto;
+    }
+
+    model-viewer {
+        width: 90%;
+        height: 50vh;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: #fff; 
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        font-size: 8px; 
+    }
+}
+@media (max-width: 1440px) {
+    .overlay-image {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 800px) {
+    .overlay-image {
+        position: fixed;
+        width: 38%; 
+        margin: 41%;
+        left: -17%;
+
+    }
+}
+
+
+
